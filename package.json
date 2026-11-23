@@ -1,0 +1,16 @@
+{
+  "name": "modern-web-guidance-workbuddy",
+  "version": "1.0.1-workbuddy.2",
+  "private": true,
+  "description": "WorkBuddy-ready packaging of GoogleChrome/modern-web-guidance Skill, compatible with domestic and international WorkBuddy editions",
+  "license": "Apache-2.0",
+  "scripts": {
+    "install:workbuddy": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/install.ps1",
+    "install:workbuddy:domestic": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/install.ps1 -Edition Domestic",
+    "install:workbuddy:international": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/install.ps1 -Edition International",
+    "install:workbuddy:both": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/install.ps1 -Edition Both",
+    "install:workbuddy:project": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/install.ps1 -Scope Project",
+    "verify:workbuddy": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/verify.ps1",
+    "verify:workbuddy:both": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/verify.ps1 -Edition Both"
+  }
+}
